@@ -29,7 +29,7 @@ y_mangala <- ifelse(x <= 41666.67, x,
 df_list <-list("x" = x,"y_gota" = y_gota,"y_ranil" = y_ranil, "y_mangala" = y_mangala)
 df <- as.data.frame(df_list)  
 
-#Take home pay 
+#Take home pay after EPF/ETF
 
 ranil_z <- ifelse(x <= 100000, (x * 0.92),
            ifelse(x <= 141666.67,((x-100000)* 0.94+100000)*0.92,
